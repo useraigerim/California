@@ -1,0 +1,873 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+header .header__nav{
+    display: flex;
+    gap: 30px;
+}
+header .header__nav a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+header .header__link{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.phone{
+    background: #DCE5E2;
+    border-radius: 32px;
+    position: relative;
+    height: 550px;
+}
+.phone__items{
+    display: flex;
+}
+.phone__items .phone__item-left{
+    width: 50%;
+    padding: 145px 3px 0 54px;
+
+}
+.phone__item-left h1{
+    font-family: 'Readex Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 58px;
+line-height: 70px;
+color: #000000;
+margin-bottom: 19px;
+}
+
+.phone__item-left a{
+    text-decoration: none;
+}
+
+.phone__item-left a button{
+ padding: 14px 53px;
+border: 1px solid #000000;
+border-radius: 200px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-transform: capitalize;
+color: #000000;
+background: rgba(255,255,255,0);
+margin-top: 30px;
+}
+
+.phone__items .phone__item-right{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.phone__items .phone__item-right img{
+    width: 100%;
+    height: 550px;
+}
+.phone .slide{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: -34px;
+
+}
+#left{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+#right{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+.shop h2{
+    text-align: center;
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    color: #000000;
+    margin: 72px 0 9px;
+}
+.shop .shop__text{
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 55px;
+}
+.shop__items{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.item_laptop{
+    width: 48%;
+    height: 792px;
+}
+.item_laptop .laptop_pc{
+    width: 100%;
+    height: 472px;
+    padding-right: 46px;
+    padding-left: 42px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0 , 0.3);
+    transition: .5s;
+}
+.laptop_pc:hover{
+    transform: translateY(-20px);
+    transition: .5s;
+}
+.item_laptop .laptop_pc img{
+    height: 377px;
+    width: 100%;
+}
+.laptop_pc .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;  
+}
+.text p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: right;
+    color: #000000;
+}
+.text h3{
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: right;
+    color: #000000;
+    width: 192px;
+}
+.laptop_watch{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    margin-top: 20px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0 , 0.3);
+    transition: 0.5s;
+}
+.laptop_watch:hover{
+    transform: translateY(20px);
+    transition: 0.5s;
+}
+.laptop_watch img{
+    width: 60%;
+    height: 270px;
+}
+.laptop_watch .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+}
+.item_phone{
+    width: 24%;
+    height: 760px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0 , 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 41px;
+    transition: .5s;
+}
+.item_phone:hover{
+    transform: scale(0.9);
+    transition: .5s;
+    border-radius: 20px;
+}
+.item_phone img{
+    width: 100%;
+    height: 367px;
+}
+.text_center p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+}
+.text_center h3{
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+}
+.item_tablet{
+    width: 24%;
+    height: 760px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0 , 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 42px;
+    transition: .5s;
+    
+}
+.item_tablet:hover{
+    transform: scale(.9);
+    transition: .5s;
+    border-radius: 20px;
+}
+.item_tablet img{
+    width: 100%;
+    height: 425px;
+}
+
+
+.save h4{
+font-family: 'Readex Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 42px;
+line-height: 52px;
+text-align: center;
+color: #000000;
+margin-top: 78px;
+}
+.save p{
+font-family: 'Readex Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 17px;
+text-align: center;
+color: #000000;
+margin: 9px 0 59px 0;
+}
+
+.mak{
+    width: 25%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.mak img{
+width: 247px;
+height: 214px;
+margin: 28px 28px;
+
+}
+
+
+
+.mak_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text_item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+}
+
+.text_item p{
+    font-family: 'Readex Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+color: #000000;
+margin: 9px 0 25px 0;
+
+}
+.text_item h5{
+    width: 261px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #4B4B4B;
+/* margin-bottom: 25px; */
+}
+
+.text_item h6{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: #000000;
+margin-top: 25px;
+}
+
+.Galaxy img{
+    width: 247px;
+height: 214px;
+margin: 28px 28px;
+display: flex;
+   
+
+
+}
+
+.Air img{
+width: 247px;
+height: 214px;
+margin: 28px 28px;
+display: flex;
+    
+
+}
+
+.iPad img{
+width: 247px;
+height: 214px;
+margin : 28px 28px;
+
+
+}
+
+
+.save__items{
+    
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-left: 50px;
+   
+} 
+
+.Galaxy{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.Air{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.iPad{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.See p{
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+   text-align: center;
+    color: #000000;
+    margin-top: 47px;
+
+}
+    
+
+.see h4{
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 9px;
+}
+
+.watch2{
+    height: 453px;
+    /* margin-top: 56px; */
+    width: 30%;
+background-color: #F8F9FA; 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+    
+}
+
+.Smart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 56px;
+}
+
+.Smart p{
+    margin-top: 41px;
+font-family: 'Readex Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 17px;
+text-align: center;
+color: #000000;
+
+}
+
+.Smart h5{
+    font-family: 'Readex Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 35px;
+ text-align: center;
+color: #000000;
+
+} 
+
+.Smart a button{
+    
+border: 1px solid #000000;
+
+border-radius: 200px;
+padding: 14px 63px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+text-transform: capitalize;
+
+color: #000000; 
+ margin: 30px; 
+
+
+}
+
+.watch2 img{
+    width: 259px;
+height: 250px;
+margin: 0 77px;
+
+}
+.Best{
+width: 30%;
+
+    background-color: #F8F9FA;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center; 
+
+
+}
+
+.Best img{
+width: 294px;
+height: 250px;
+
+}
+
+.Product{
+    width: 30%;
+
+    background-color: #F8F9FA;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center; 
+
+}
+
+.Product img{
+    height: 250px;
+    width: 355px;
+}
+
+.Ideas h2{
+font-family: 'Readex Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 42px;
+line-height: 52px;
+text-align: center;
+color: #000000;
+margin-top: 47px; 
+}
+.Ideas p{
+font-family: 'Readex Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 17px;
+text-align: center;
+color: #000000;
+margin-bottom: 56px;
+} 
+
+
+
+
+.place__text{
+display: flex;
+flex-direction: column;
+gap: 10px;
+width: 45%; 
+
+}  
+
+.photo_item img{
+    width: 620px;
+    height: 420px;
+}
+ 
+.place__text p{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400px;
+font-size: 24px;
+line-height: 30px;
+color: #000000;
+text-align: left;
+width: 569px;
+}
+
+.place{
+    /* width: 100%; */
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 35px;
+    
+
+   
+} 
+
+.see{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 73px 0 24px;
+}
+
+.see span{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-transform: capitalize;
+color: #000000;
+}
+.see img{
+    width: 14px;
+    height: 13px;
+}
+
+
+
+
+.search{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.search h2{
+    font-family: 'Readex Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 42px;
+line-height: 52px;
+text-align: center;
+color: #000000;
+}
+
+.search form{
+    display: flex;
+    justify-content: center;
+}
+
+.search .search__key img{
+    width: 30px;
+    height: 30px;
+}
+
+.search .search__key{
+    display: flex;
+    width: 650px;
+    align-items: center;
+    padding: 21px 0 22px 21px;
+    border: 1px solid #C5C5C5;
+    border-radius: 100px;
+    padding: 21px 0 22px 21px;
+    height: 60px;
+
+}
+
+.search label input{
+    border: none;
+    outline: none;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #000000;
+
+
+}
+.search label input::placeholder{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #000000;
+}
+
+.search__keys{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+.keys__item{
+    margin-top: 40px;
+}
+.keys__item a{
+    background: #FFFFFF;
+border: 1px solid #C5C5C5;
+border-radius: 200px;
+padding: 12px 22px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #000000;
+text-decoration: none;
+}
+
+.keys__item a:hover{
+    background: #f3e3e3;
+
+
+}
+
+.search__thing input{
+    padding:  16px 184px 16px 32px;
+    border-radius: 54px 0 0 54px;
+}
+
+.search__thing button{
+    background: #000000;
+border-radius: 0px 200px 200px 0px;
+padding: 16px;
+margin-left: 0;
+color: #fff;
+    
+}
+.thing{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 81px;
+
+}
+.thing div{
+    height: 450px;
+    width: 935px;
+    background: #DCE5E2;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 47px;
+   
+}
+
+.thing div h2{
+font-family: 'Readex Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 42px;
+line-height: 52px;
+text-align: center;
+color: #000000;
+margin-bottom: 9px;
+}
+.thing div p{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #000000;
+}
+
+.thing img{
+    width: 200px;
+    height: 233px;
+    margin: 14px 0;
+}
+
+.thing form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    background: #DCE5E2;
+    border-radius: 54px;
+    
+}
+
+.thing form label{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px 0 16px 32px;
+    border: 1px solid #000000; 
+    height: 50px;
+    align-items: center;
+    margin: 14px 0 43px 0;
+
+}
+
+.thing label input{
+    background-color: transparent;
+    border: 0;
+    outline: none;
+
+}
+
+.thing label button{
+    background: #000000;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 0px 200px 200px 0px;
+    
+
+}
+
+footer{
+    background: #F8F9FA;
+    padding-top: 44px;
+    margin-top: 19px;
+}
+
+.footer__top{
+    display: flex;
+    justify-content: space-between; 
+    border-bottom: 2px solid #DCE5E2;
+    padding-bottom: 78px;
+}
+.top__logo{
+    width: 250px;
+
+}
+.top__logo p{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+
+}
+.top__links{
+    display: flex;
+    flex-direction: column;
+}
+
+.top__links h3{
+font-family: 'Readex Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+color: #000000;
+margin-bottom: 5px;
+} 
+
+.top__links a{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 22px;
+color: #000000;
+text-decoration: none;
+margin-top: 14px;
+} 
+.footer__bottom .bottom__text{
+    display: flex;
+    align-items: center;
+}
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 52px;
+}
+.footer__bottom span{
+    font-family: 'Readex Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+color: #000000;
+}
+.footer__bottom  img{
+
+}
